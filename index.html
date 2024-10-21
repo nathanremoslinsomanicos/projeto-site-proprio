@@ -3,39 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha de Treino</title>
+    <title>Burguer Mania</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Ficha de Treino Personalizada</h1>
+        <h1>Burguer Mania</h1>
+        <nav>
+            <ul>
+                <li><a href="#burgers">Nossos Hambúrgueres</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <form id="training-form">
-        <label for="goal">Objetivo:</label>
-        <select id="goal" required>
-            <option value="">Selecione um objetivo</option>
-            <option value="hipertrofia">Hipertrofia</option>
-            <option value="emagrecimento">Emagrecimento</option>
-        </select>
-        
-        <label for="days">Quantos dias por semana treina?</label>
-        <select id="days" required>
-            <option value="abc">3 Dias (ABC)</option>
-            <option value="abcd">4 Dias (ABCD)</option>
-        </select>
-        
-        <label for="experience">Você já fez academia?</label>
-        <select id="experience" required>
-            <option value="sim">Sim</option>
-            <option value="nao">Não</option>
-        </select>
-        
-        <label for="health">Algum problema de saúde?</label>
-        <input type="text" id="health" placeholder="Ex: hipertensão, lesão, etc.">
-        
-        <button type="submit">Gerar Ficha de Treino</button>
-    </form>
-    
-    <script src="script.js"></script>
+
+    <main>
+        <section id="burgers">
+            <h2>Nossos Hambúrgueres</h2>
+            <div class="burger">
+                <img src="https://via.placeholder.com/150" alt="Hambúrguer Clássico">
+                <h3>Hambúrguer Clássico</h3>
+                <p>Delicioso hambúrguer com carne suculenta, queijo e molho especial.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="burger">
+                <img src="https://via.placeholder.com/150" alt="Hambúrguer BBQ">
+                <h3>Hambúrguer BBQ</h3>
+                <p>Hambúrguer com molho barbecue, cebola caramelizada e bacon crocante.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="burger">
+                <img src="https://via.placeholder.com/150" alt="Hambúrguer Vegano">
+                <h3>Hambúrguer Vegano</h3>
+                <p>Feito com grão-de-bico e especiarias, acompanhado de guacamole.</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Para pedidos e informações, entre em contato pelo e-mail: contato@burguer.com.br</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Burguer Mania. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
