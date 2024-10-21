@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Treino Personalizada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ficha de Treino Personalizada</h1>
+    </header>
+
+    <section class="questionnaire">
+        <h2>Preencha o questionário</h2>
+        <form id="training-form">
+            <label for="goal">Qual o seu objetivo?</label>
+            <select id="goal" name="goal">
+                <option value="hipertrofia">Hipertrofia</option>
+                <option value="emagrecimento">Emagrecimento</option>
+                <option value="fortalecimento">Fortalecimento</option>
+            </select>
+
+            <label for="days">Quantos dias por semana você pode treinar?</label>
+            <select id="days" name="days">
+                <option value="abc">3 Dias (ABC)</option>
+                <option value="abcd">4 Dias (ABCD)</option>
+                <option value="abcde">5 Dias (ABCDE)</option>
+            </select>
+
+            <label for="experience">Já fez academia antes?</label>
+            <select id="experience" name="experience">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="health">Possui problemas de saúde ou articulações?</label>
+            <textarea id="health" name="health" rows="4" placeholder="Descreva se houver"></textarea>
+
+            <button type="submit">Gerar Ficha de Treino</button>
+        </form>
+    </section>
+
+    <section class="workout-plan" id="workout-plan" style="display: none;">
+        <h2>Sua Ficha de Treino</h2>
+        <div id="plan-content"></div>
+        <button onclick="window.print()">Imprimir Ficha</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
