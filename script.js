@@ -62,5 +62,5 @@ document.getElementById('training-form').addEventListener('submit', function(eve
     }
 
     localStorage.setItem('workoutPlan', newPageContent);
-    window.location.href = 'workout.html';
+    window.location.href = 'fichaTreino.html';
 });
