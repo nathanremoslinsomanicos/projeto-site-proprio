@@ -22,7 +22,7 @@ h1 {
     color: #333;
 }
 
-.questionnaire, .workout-plan {
+.questionnaire {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -61,14 +61,3 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-#plan-content {
-    margin-bottom: 20px;
-}
-
-@media print {
-    button {
-        display: none;
-    }
-}
-
